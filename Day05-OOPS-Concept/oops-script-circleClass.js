@@ -1,42 +1,71 @@
 
-//4, UML diagram to typescript class
+//2. UML diagram to typescript class
+
+var circleObjResInScreen = document.querySelector('#UMLDiagramClass');
+circleObjResInScreen.appendChild( document.createTextNode('p'));
+circleObjResInScreen.innerHTML="";
 
 class Circle{
-    constructor(radius,colour){
-        this.radius=radius;
-        this.colour=colour;
+    constructor(radiusInput,colourInput){
+        this.radius=radiusInput;
+        this.colour=colourInput;
     }
-    get radiusCircle(){
-        return this.radius;
+    
 
+    setRadiusBean(radius){
+        this.radius=radius;
+
+    }; 
+    
+   
+    getRadius(){
+        return (this.radius);
     };
-    get colourCircle(){
+
+    getColor(){
         return this.colour
 
     };
-    set radiusCircle(radius){
-        this.radius=radius;
-
-    };
-    set colourCircle(colour){
+  
+    setColorBean(colour){
         this.colour=colour;
 
     };
     toString(){
         return `Circle[radius=${this.radius},colour=${this.colour}]`;
     };
-    get area(){
+    getArea(){
        return Math.PI*Math.pow(this.radius,2);
     };
-    get cicumference(){
+    getCircumference(){
         return 2*Math.PI*this.radius;
     }
 }
-var obj1=new Circle(5,"blue");
-console.log(obj1.radius);
-console.log(obj1.colour);
-console.log(obj1.area.toFixed(2));
-console.log(obj1.cicumference.toFixed(2));
-console.log(obj1.radiusCircle);
-console.log(obj1.colourCircle);
-console.log(obj1.toString());
+circleObjResInScreen.innerHTML=circleObjResInScreen.innerHTML+"<br> Access With circleObj=new Circle(5,\"red\");  <hr>";
+
+var circleObj=new Circle(5,"red");
+
+console.log(circleObj.getColor);
+circleObjResInScreen.innerHTML=circleObjResInScreen.innerHTML+"<br> Color : "+circleObj.getColor;
+console.log(circleObj.getRadius);
+circleObjResInScreen.innerHTML=circleObjResInScreen.innerHTML+"<br> Radius : "+circleObj.getRadius;
+
+console.log("circleObj.toString : "+circleObj.toString());
+circleObjResInScreen.innerHTML=circleObjResInScreen.innerHTML+"<br> circleObj.toString: "+circleObj.toString();
+
+
+
+var areaReturned=circleObj.getArea();
+console.log("circleObj.getArea() : "+circleObj.getArea());
+circleObjResInScreen.innerHTML=circleObjResInScreen.innerHTML+"<br> circleObj.getArea().toFixed(2) : "+circleObj.getArea().toFixed(2);
+console.log("circleObj.getCircumference : "+circleObj.getCircumference());
+circleObjResInScreen.innerHTML=circleObjResInScreen.innerHTML+"<br> circleObj.getCircumference().toFixed(2) : "+circleObj.getCircumference().toFixed(2);
+
+
+
+
+
+circleObjResInScreen.innerHTML=circleObjResInScreen.innerHTML+"<hr><br> override Color  and radius <hr> ";
+circleObj.setColorBean("green");
+circleObj.setRadiusBean(10);
+circleObjResInScreen.innerHTML=circleObjResInScreen.innerHTML+"<br> circleObj.toString()  : "+circleObj.toString();
