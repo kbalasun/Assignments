@@ -1,0 +1,139 @@
+<!--Write HTML input tags snippet to show default values for all Form elements. -->
+    <html> 
+        <head>        
+            <title>New Tab Page</title>
+        </head>
+        <body>
+
+            <!-- <select>
+            <textarea>
+            <button>
+            <fieldset>
+            <legend>
+            <datalist>
+            <output>
+            <option>
+            <optgroup> -->
+            
+            <form>
+                <br>
+                <div style="font-weight: bold;"><h3>Label<h3></div>
+                <br>
+                <label for="fname">First name:</label>
+                <br>
+                <br>
+                <div style="font-weight: bold;"><h3>input<h3></div>
+                <input type="text" id="fname" name="fname" value="default name">
+                <br>
+                <br>
+
+                <div>
+                    <div style="font-weight: bold;"><h3>select<h3></div>
+                    <label for="cars">Choose a car:</label>
+                    <br>
+                    <select id="cars" name="cars" size="3" multiple>
+                        <option value="jeep">Jeep</option>
+                        <option value="toyota" selected>Toyota</option>
+                        <option value="honda">Honda</option>
+                        <option value="ford">Ford</option>
+                    </select>
+                </div>
+
+                <br>
+                <div>
+                    <div style="font-weight: bold;"><h3>textarea <h3></div>
+                    <br>
+                    <textarea name="message" rows="10" cols="30">
+                        It is really feeling nice to learn more about the simplest html and it is also has so much wonderful tags inbuilt.
+                        Its a bliss to get to know more and more everyday.....
+                    </textarea>
+                </div>
+
+                <br>
+                <div>
+                    <div style="font-weight: bold;"><h3>button <h3></div>
+                    <br>
+                    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+                </div>
+
+                <br>
+                <div>
+                    <div style="font-weight: bold;"><h3>fieldset-legend <h3></div>
+                    <br>
+                    <fieldset>
+                        <legend>Person:</legend>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <input type="submit" value="Submit">
+                      </fieldset>
+                </div>
+
+
+                <br>
+                <div>
+                    <div style="font-weight: bold;"><h3>datalist <h3></div>
+                    <br>
+                    <input list="browsers">
+                    <datalist id="browsers">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome" selected >
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                </div>
+
+                
+                   <br>
+               
+                <div>
+                    <div style="font-weight: bold;"><h3>option <h3></div>
+                    <br>
+                    <label for="cars">Choose a car:</label>
+
+                    <select id="cars">
+                      <option value="toyota" selected>Toyota</option>
+                      <option value="ford" >Ford</option>
+                      <option value="honda">Honda</option>
+                      <option value="jeep">Jeep</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <div style="font-weight: bold;"><h3>optgroup <h3></div>
+                    <br>
+                    <label for="cars">Choose a car:</label>
+                    <select  name="cars" id="cars">
+                        <optgroup label="Swedish Cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                        </optgroup>
+                        <optgroup label="German Cars">
+                            <option value="mercedes" selected>Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+
+            </form>   
+            
+            <form  id="temperature-form" oninput="result.value = slider.value">
+                <fieldset>
+                    
+                    <legend>Output :</legend>
+                        <input type="range" id="slider" name="temperature"  value="25">
+                        <br/><br/>
+                        <p>The value is  : <output form="temperature-form" name="result" for="slider">25</output>
+                        </p>
+                        
+                </fieldset>
+            </form> 
+            <br/>
+
+           
+           
+        </body>        
+    </html> 
