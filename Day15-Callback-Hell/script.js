@@ -30,7 +30,7 @@ let callbackfunc=()=> {
                                         div.innerText='1'
                                         setTimeout(()=>{
                                             var el=document.querySelector("div#countdown");
-                                         //   el.style.display = 'none';
+ 
 
                                             div.innerText='Happy Independence Day';
                                             

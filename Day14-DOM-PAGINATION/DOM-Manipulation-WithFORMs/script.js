@@ -39,8 +39,8 @@ if(count > 2) {
 
 
 
-for(let i of array){
-  i.value = ''
+for(let idx of array){
+  idx.value = ''
 }
 
 })
