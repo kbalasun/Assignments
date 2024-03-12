@@ -1,0 +1,9 @@
+input{
+line-height:60px; 
+background-color:#DAE0E2; 
+font-family: 'Comfortaa', cursive;
+
+}
+body{
+  background-image: linear-gradient(to right, lightblue, pink);
+}

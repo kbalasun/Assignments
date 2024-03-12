@@ -1,0 +1,100 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(51, 55, 90);
+    font-size: 16px;
+    color:#fff;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .container{
+    max-width: 500px;
+    height: auto;
+    background-color:rgb(32, 35, 66);
+    margin: 10px ;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .container2{
+    max-width: 800px;
+    height: auto;
+    background-color:rgb(32, 35, 66);
+    position: absolute;
+ 
+    top: 20px;
+    left: 50%;
+
+    border-radius: 10px;
+    
+  }
+  
+  
+  .container .form-group input{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: left  ;
+    background-color: rgb(36, 39, 70);
+    color: #fff;
+    border: #fff 2px solid;
+  }
+  
+  .container .form-group select{
+   width: 50%;
+   height: 30px;
+   font-size: 16px;
+   text-align: left;
+   background-color: rgb(36, 39, 70);
+   color: #fff;
+   border: #fff 2px solid;
+   border-radius: 10px;
+  }
+  .container .form-group button{
+    width: 50%;
+    height: 30px;
+    font-size: 18px;
+    font-weight:600;
+    background-color:rgb(66, 205, 124);
+    color: #000;
+    border: #fff 2px solid;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 3px;
+    cursor: pointer;
+   }
+   
+  .container .form-field{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  
+  
+ 
+  
+  .container .form-group{
+    margin: 0px 50px;
+  }
+  
+  .container table{
+    margin: 10px auto;
+  }
+  
+  table th,td{
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  p{
+    text-align: center;
+  }
