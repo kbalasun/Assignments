@@ -18,13 +18,13 @@ var array = [firstName,lastName,adress,pincode,gender,food,state,country]
 var tableRow = document.createElement('tr')
 var count = 0;
 for(var i = 0; i < array.length; i++){
-  if(array[i].value  != ''){
+  // if(array[i].value  != ''){
     var tableData = document.createElement('td')
     tableData.innerHTML=array[i].value
     tableRow.append(tableData)
     count++
   
-  }
+  // }
   
 }
 if(count > 2) {

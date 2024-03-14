@@ -7,7 +7,7 @@
   
   body{
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(51, 55, 90);
+    background-color: rgb(98, 70, 109);
     font-size: 16px;
     color:#fff;
   }
@@ -19,7 +19,7 @@
   .container{
     max-width: 500px;
     height: auto;
-    background-color:rgb(32, 35, 66);
+    background-color:rgb(65, 20, 90);
     margin: 10px ;
     border-radius: 10px;
     padding: 20px;
@@ -27,7 +27,7 @@
   .container2{
     max-width: 800px;
     height: auto;
-    background-color:rgb(32, 35, 66);
+    background-color:rgb(66, 32, 64);
     position: absolute;
  
     top: 20px;
@@ -38,33 +38,43 @@
   }
   
   
-  .container .form-group input{
+  .container .form-group input {
     width: 50%;
     height: 30px;
     border-radius: 10px;
     font-size: 16px;
     text-align: left  ;
-    background-color: rgb(36, 39, 70);
+    background-color: rgb(67, 36, 70);
     color: #fff;
     border: #fff 2px solid;
   }
-  
+  .container .form-group textarea {
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: left  ;
+    background-color: rgb(58, 36, 70);
+    color: #fff;
+    border: #fff 2px solid;
+  }
   .container .form-group select{
    width: 50%;
    height: 30px;
    font-size: 16px;
    text-align: left;
-   background-color: rgb(36, 39, 70);
+   background-color: rgb(60, 36, 70);
    color: #fff;
    border: #fff 2px solid;
    border-radius: 10px;
   }
+
   .container .form-group button{
     width: 50%;
     height: 30px;
     font-size: 18px;
     font-weight:600;
-    background-color:rgb(66, 205, 124);
+    background-color:rgb(131, 66, 205);
     color: #000;
     border: #fff 2px solid;
     border-radius: 10px;
@@ -80,7 +90,9 @@
   }
   
   
- 
+  .container .inputType{
+    margin: 0px 50px;
+  }
   
   .container .form-group{
     margin: 0px 50px;

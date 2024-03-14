@@ -16,47 +16,70 @@
   <p id="description"> This task is- DOM manipulation with form.</p>
   <h1 id="title">Form Submit</h1>
 
+  
+  <form action="" id="form" >
   <div class="form-group">
-  <form action="" id="form">
-  <label class ="form-field" for="first-name">First Name</label>
-  <input class ="form-field" type="text" placeholder="Fill your first name here" id="first-name">
+    <label class ="form-field" for="first-name">First Name *</label>
+    <input class ="form-field" type="text" placeholder="Fill your first name here" id="first-name" required>
+  </div>
+  <div class="form-group">
+    <label class ="form-field" for="last-name">Last Name *</label>
+    <input class ="form-field" type="text" placeholder="Fill your last name here" id="last-name" required>
 
-  <label class ="form-field" for="last-name">Last Name</label>
-  <input class ="form-field" type="text" placeholder="Fill your last name here" id="last-name">
+  </div>
+  <div class="form-group">
+    <label class ="form-field" for="gender">Gender</label>
+  </div>
+    <!-- <select class ="form-field" name="gender" id="gender" type="radio">
+      <option value="">-Select Gender-</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select> -->
+    <div class="inputType">    
+      <div class="input-group mb-3">  
+        <input type="radio" class="form-check-input" id="gender" name="gender" value="Male">Male</input>
+        <input type="radio" class="form-check-input" id="gender" name="gender" value="Female">Female</input>
+        <input type="radio" class="form-check-input" id="gender" name="gender" value="Others">Others</input>
+      </div>
+    </div>
+ 
+ 
+   
 
-
-<label class ="form-field" for="gender">Gender</label>
-<select class ="form-field" name="gender" id="gender" type="radio">
-  <option value="">-Select Gender-</option>
-  <option value="Male">Male</option>
-  <option value="Female">Female</option>
-  <option value="Other">Other</option>
-</select>
-
-<label class ="form-field" for="food">Choice Of Food</label>
-<select class ="form-field" name="food" id="food">
-  <option value="">Choice Of Food</option>
-  <option value="Veg">Veg</option>
-  <option value="Non-Veg">Non-Veg</option>
-  <option value="Egg-only">Egg-Only</option>
-  <option value="Gluton-Free">Gluton-Free</option>
-</select>
-<label class ="form-field" for="address">Address</label>
-<input class ="form-field" type="text" placeholder="Fill your adress here" id="address">
-
-<label class ="form-field" for="pincode">pincode</label>
-<input class ="form-field" type="text" placeholder="your area pincode number" id="pincode">
-
-<label class ="form-field" for="state">State</label>
-<input class ="form-field" type="text" placeholder="Fill your state name here" id="state">
-
-<label class ="form-field" for="country">Country</label>
-<input class ="form-field" type="text" placeholder="fill your Country name here" id="country">
-
-<button class ="brn brn-primary form-field" type="submit" id="submit">submit</button>
+<div class="form-group">
+  <label class ="form-field" for="food">Choice Of Food</label>
+  <select class ="form-field" name="food" id="food">
+    <option value="">Choice Of Food</option>
+    <option value="Veg">Veg</option>
+    <option value="Non-Veg">Non-Veg</option>
+    <option value="Egg-only">Egg-Only</option>
+    <option value="Gluton-Free">Gluton-Free</option>
+  </select>
+</div>
+<div class="form-group">
+  <label class ="form-field" for="address">Address</label>
+  <textarea class ="form-field" rows="5" placeholder="Fill your area address here"  id="address"></textarea>
+  
+</div>
+<div class="form-group">
+  <label class ="form-field" for="pincode">pincode *</label>
+  <input class ="form-field" type="text" placeholder="Fill your area pincode number" id="pincode" required>
+</div>
+<div class="form-group">
+  <label class ="form-field" for="state">State</label>
+  <input class ="form-field" type="text" placeholder="Fill your state name here" id="state">
+</div>
+  <div class="form-group">
+  <label class ="form-field" for="country">Country</label>
+  <input class ="form-field" type="text" placeholder="Fill your Country name here" id="country">
+</div>
+<div class="form-group">
+  <button class ="btn btn-primary form-field" type="submit" id="submit">submit</button>
+</div>
 </form>
 </div>
-</div>
+
 <div class="container2" style="display:none;">
 <form id ="rightForm" action="">
 <table class="table">
