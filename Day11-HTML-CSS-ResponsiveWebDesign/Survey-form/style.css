@@ -1,0 +1,19 @@
+.rating input {
+    display: none;
+}
+
+.rating label {
+    color: red
+}
+
+.rating input:checked+label~label {
+    color: lightslategrey
+}
+
+thead {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
